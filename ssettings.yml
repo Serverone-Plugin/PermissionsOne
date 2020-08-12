@@ -1,0 +1,29 @@
+groups:
+   default:
+      permissions:
+      - ServerOnePlugin.exist: true
+      options:
+         prefix: ""
+         sufix: ""
+      worlds:
+         
+         
+   Spieler:
+      permissions:
+         test.permission: true
+
+
+#############################################################################
+#                                                                           #
+#                                Users                                      #
+#                                                                           #
+#############################################################################
+users:
+  eda5f0f5-545a-494f-982b-3da0ead1f18b:
+    options:
+      name: Robotix_00
+      prefix: ''
+      suffix: '§f'
+    group: Spieler
+    permissions:
+    - ServerOnePlugin.exist: true

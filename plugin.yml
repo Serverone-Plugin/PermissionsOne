@@ -1,0 +1,12 @@
+name: PermissionsOne
+author: Robotix_00
+main: de.robotix_00.serverone.permissionsOne.PermissionsOne
+version: 0.1
+depend:
+- ServerOneSource
+commands:
+   pone:
+      description: Kontrolliere PermissionOne
+permissions:
+   permissionsone.pone:
+      default: false
