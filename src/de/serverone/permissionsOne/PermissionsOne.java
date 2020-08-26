@@ -1,9 +1,9 @@
-package de.robotix_00.serverone.permissionsOne;
+package de.serverone.permissionsOne;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import de.robotix_00.serverone.permissionsOne.listeners.PermissionListener;
 import de.robotix_00.serverone.source.util.ServerOneConfig;
+import de.serverone.permissionsOne.listeners.PermissionListener;
 
 public class PermissionsOne extends JavaPlugin {
     private static PermissionsOne plugin;

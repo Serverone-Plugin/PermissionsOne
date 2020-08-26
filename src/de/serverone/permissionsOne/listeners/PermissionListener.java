@@ -1,4 +1,4 @@
-package de.robotix_00.serverone.permissionsOne.listeners;
+package de.serverone.permissionsOne.listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -9,8 +9,8 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.server.ServerLoadEvent;
 
-import de.robotix_00.serverone.permissionsOne.PermissionController;
-import de.robotix_00.serverone.permissionsOne.PermissionsOne;
+import de.serverone.permissionsOne.PermissionController;
+import de.serverone.permissionsOne.PermissionsOne;
 
 public class PermissionListener implements Listener {
     static PermissionsOne plugin = PermissionsOne.getPlugin();

@@ -1,4 +1,4 @@
-package de.robotix_00.serverone.permissionsOne.commands;
+package de.serverone.permissionsOne.commands;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,9 +12,9 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
 
-import de.robotix_00.serverone.permissionsOne.PermissionController;
-import de.robotix_00.serverone.permissionsOne.PermissionsOne;
 import de.robotix_00.serverone.source.util.ServerOneConfig;
+import de.serverone.permissionsOne.PermissionController;
+import de.serverone.permissionsOne.PermissionsOne;
 
 public class POnecommand implements CommandExecutor, TabCompleter {
     PermissionsOne plugin = PermissionsOne.getPlugin();

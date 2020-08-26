@@ -1,4 +1,4 @@
-package de.robotix_00.serverone.permissionsOne;
+package de.serverone.permissionsOne;
 
 import java.util.ArrayList;
 import java.util.Collections;

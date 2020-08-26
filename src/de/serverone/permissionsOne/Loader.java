@@ -1,10 +1,10 @@
-package de.robotix_00.serverone.permissionsOne;
+package de.serverone.permissionsOne;
 
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import de.robotix_00.serverone.permissionsOne.commands.POnecommand;
-import de.robotix_00.serverone.permissionsOne.listeners.*;
+import de.serverone.permissionsOne.commands.POnecommand;
+import de.serverone.permissionsOne.listeners.*;
 
 public class Loader {
 	public static void load(JavaPlugin plugin) {
