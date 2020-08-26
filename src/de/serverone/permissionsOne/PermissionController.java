@@ -128,6 +128,8 @@ public class PermissionController {
     public void setupPlayer(Player player) {
 	if (perms.get(player) == null)
 	    perms.put(player, player.addAttachment(plugin));
+	
+	//adding permissions
 	for (String permission : getPermissions(player, player.getWorld())) {
 	    if (permission.startsWith("~")) {
 		permission = permission.replaceFirst("~", "");
@@ -136,6 +138,9 @@ public class PermissionController {
 		perms.get(player).setPermission(permission, true);
 	    }
 	}
+	
+	//adding tablist-colors
+	player.setPlayerListName(getTabColour(player) + player.getName());
     }
 
     public void resetPlayer(Player player) {
@@ -162,5 +167,17 @@ public class PermissionController {
 	    return prefix;
 	else
 	    return "<<p>>";
+    }
+    public String getTabColour(Player player) {
+	String prefix;
+	prefix = config.getString("users." + player.getUniqueId() + ".options.listcolour");
+	if (prefix != null)
+	    return prefix;
+
+	prefix = config.getString("groups." + getPlayersGroup(player) + ".listcolour");
+	if (prefix != null)
+	    return prefix;
+	else
+	    return "";
     }
 }
