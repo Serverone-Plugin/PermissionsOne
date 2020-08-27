@@ -11,7 +11,7 @@ import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionAttachment;
 
-import de.robotix_00.serverone.source.util.ServerOneConfig;
+import de.serverone.source.util.ServerOneConfig;
 
 public class PermissionController {
     private HashMap<Player, PermissionAttachment> perms = new HashMap<>();
