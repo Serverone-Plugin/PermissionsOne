@@ -12,7 +12,7 @@ public class PermissionsOne extends JavaPlugin {
     // onEnable
     public void onEnable() {
 	plugin = this;
-	ServerOneConfig.loadConfig(this, "ServerOne/PermissionsOne", "settings.yml");
+	ServerOneConfig.loadConfig(this, "plugins/ServerOne/PermissionsOne", "settings.yml");
 	
 	this.getLogger().info("Permissions-One geladen");
 	
