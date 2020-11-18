@@ -94,7 +94,7 @@ public class PermissionController {
 
 	for (String nowGroup : groups) {
 	    permissions.addAll(config.getList("groups." + nowGroup + ".permissions"));
-	    permissions.addAll(config.getList("groups." + nowGroup + ".worlds." + world.getName()));
+	    permissions.addAll(getWorldPermissions(nowGroup, world.getName()));
 	    Collections.reverse(permissions);
 	}
 	permissions.addAll(config.getList("users." + player.getUniqueId() + ".permissions"));
@@ -122,6 +122,7 @@ public class PermissionController {
 	}
 
 	Collections.reverse(permissions);
+	
 	return permissions;
     }
 
